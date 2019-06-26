@@ -1,12 +1,31 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDom from 'react-dom';
+import './style.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+function buttonText(){
+	return 'Click on Me!';
+
+}
+const App = function(){
+const buttonTextnone = {text: 'None',text2: 'noom'};
+
+	return (
+	  <div>
+  <label className="label" htmlFor="name">Enter Name</label>
+  <input id="name" type="text"/>
+		  <button style={{backgroundColor: 'blue', color:'white'}}>
+		      {buttonText()}
+		  </button>
+		  <br/>
+		  <label className="label" htmlFor="age">Age</label>
+<input id="age" type="text"/>
+		  <button style={{backgroundColor:'Pink', color: 'white'}}>
+		   {buttonTextnone.text}
+		  </button>
+
+</div>
+	  );
+	  };
+
+ReactDom.render(<App />, document.querySelector('#root'));
