@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../https://fonts.googleapisff.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!--Bootstrap Social class-->
+    <link rel="stylesheet" href="../node_modules/bootstrap-social/bootstrap-social.css" />
+    <title>Form</title>
+</head>
+<body>
+    <h1 class="row-content align-items-center">A simple Form</h1>
+    <h3> Each form element requires three steps </h3>
+    <br/>
+    <ol>
+        <li>A row using <b class="red">form-group</b> class</li><br/>
+       <kbd>< div class="form-group row" >
+        <br/>.....<br/>
+        < /div ></kbd>
+       <p><li>A label for each form element that will use <b class="red">col-form-label</b> </li>
+       <kbd>< label for="firstname" >   
+           <br/> &nbsp;&nbsp;First Name<br/>
+        < /div ></kbd>
+        <p><li>Input element which will have same name as defined in label for and this will use bootstrap class of <b class="red">form-control</b></li>
+        <kbd>< input type="input" class="form-control" name="firstname" />   
+            </kbd>
+    </ol>
+
+    <h3 >Full structure for each element will look like below;</h3>
+   <img src="../images/form-element.PNG" width="80%"/>
+   <br/>
+<h4>Above block of code will look like this</h4>
+    <div class="form-group row">
+        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+        <div class="col-md-10">
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+        </div>
+    </div>
+
+</body>
